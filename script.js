@@ -38,13 +38,12 @@ if('model' in myCar){ // 9
 
 for(i in myCar.driver){ // 10
     console.log(myCar.driver[i])
-} 
-for(i in myCar, counter!=){    // 11
-    counter++
-    if(myCar[i] === typeof ''){
-        console.log(123)
+}
+for(i in myCar){ // 11
+    if(typeof myCar[i] === 'string'){
+        console.log(myCar[i])
+        console.log(i) // Для себя
     }
-    console.log(myCar[i][typeof ''])
 }
 myCar.driver2 = { // 12
     name: 'Jones',
